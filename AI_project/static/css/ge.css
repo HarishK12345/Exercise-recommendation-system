@@ -1,0 +1,49 @@
+body {
+    background-image: url('/static/images/genetic-bg.jpg');
+    margin: 0;
+    position: relative;
+    padding: 20px;
+}
+
+.day-block {
+    width: 175px; /* Adjust the width of each block as needed */
+    height: 175px; /* Make each block square */
+    margin: 5px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(148, 172, 193);
+    position: absolute;
+}
+
+.day1 {
+    top: 200%;
+    left: 60%;
+}
+
+.day2 {
+    top: 200%;
+    left: 75%; /* Adjust the left position for the second block */
+}
+
+.day3 {
+    top: 700%; /* Adjust the top position for the third block */
+    left: 60%;
+}
+
+.day4 {
+    top: 700%; /* Adjust the top position for the fourth block */
+    left: 75%; /* Adjust the left position for the fourth block */
+}
+
+.day5 {
+    top: 1200%; /* Adjust the top position for the fifth block */
+    left: 68%;
+}
+
+/* .day-block:nth-child(3n) {
+    margin-right: 12px; 
+} */

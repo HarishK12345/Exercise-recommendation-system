@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="static/css/w_details.css">
+    
+    <title>Workout details</title>
+</head>
+<body>
+  <form method="post" action="{{ url_for('submit') }}">
+  <div class="form">
+    <div class="title">It's time to get stronger!</div>
+    <div class="subtitle">Enter the details of your workout</div>
+    <div class="input-container ic1">
+      <input id="firstname" class="input" type="text" name="equip" placeholder=" " />
+      <div class="cut"></div>
+      <label for="firstname" class="placeholder">Equipment</label>
+    </div>
+    <div class="input-container ic2">
+      <input id="lastname" class="input" type="text" name="body" placeholder=" " />
+      <div class="cut"></div>
+      <label for="lastname" class="placeholder">Body part</label>
+    </div>
+    <div class="input-container ic2">
+      <input id="email" class="input" type="text" name="wt" placeholder=" " />
+      <div class="cut cut-short"></div>
+      <label for="email" class="placeholder">Time</>
+    </div>
+    <div class="input-container ic2">
+      <input id="email" class="input" type="text" name="diff" placeholder=" " />
+      <div class="cut cut-short"></div>
+      <label for="email" class="placeholder">Difficulty</>
+    </div>
+    <div class="input-container ic2">
+      <input id="email" class="input" type="text" name="cal" placeholder=" " />
+      <div class="cut cut-short"></div>
+      <label for="email" class="placeholder">Calories</>
+    </div>
+    
+
+    <button type="text" class="submit">Submit</button>
+  </div>
+</form>
+    
+    
+</body>
+</html>

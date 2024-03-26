@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Fitmate</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" />
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="static/css/gf.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <!-- <link href="static/css/responsive.css" rel="stylesheet" /> -->
+  <style>
+    body {
+	background: #f6f5f7;
+  background-image:url('/static/images/final-bg.jpg');
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	margin: -20px 0 50px;
+}
+
+.container {
+    background-color: rgb(255, 255, 255,0.4);
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
+    overflow: hidden;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+.description {
+    font-size: 20px;
+    color: #242323; 
+}
+  </style>
+</head>
+
+<body>
+    <div class="container">
+        {% for exercise in exercises %}
+        <p class="description">{{ exercise }}</p>
+        {% endfor %}
+    </div>
+</body>
+</html>
